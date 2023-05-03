@@ -83,6 +83,7 @@ include "menu.php";
       </div>
     <?php
     endwhile;
+    mysqli_close($conexao);
     ?>
   </div>
 

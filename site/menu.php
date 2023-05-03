@@ -15,6 +15,7 @@
           <input class="form-control me-2" type="email" name="email" placeholder="E-mail">
           <input class="form-control me-2" type="password" name="senha " placeholder="Senha">
           <button class="btn btn-outline-warning me-2" type="submit">Entrar</button>
+          
           <a href="novo-usuario.php" class="btn btn-outline-primary">Cadastrar</a>
         </form>
       </div>
