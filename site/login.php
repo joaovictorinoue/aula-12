@@ -1,6 +1,6 @@
 <?php 
 $email = $_POST["email"];
-$senha = $_POST["senha"];
+$senha = md5($_POST["senha"]);
 
 include "conexao.php";
 $sql_buscar_usuario = "select * from usuario where email = '$email' and senha = '$senha'";

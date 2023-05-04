@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "cabecalho.php";
 include "menu.php";
 ?>
@@ -18,4 +18,14 @@ include "menu.php";
             </form>
         </div>
     </div>
+    <?php
+$mensagem = $_GET["msg"] ?? "";
+if ($mensagem == "sucesso"){
+?>
+    <div class="alert alert-success" role="alert">
+  ✅ Usuário Cadastrado com Sucesso.
+</div>
+<?php
+}
+?>
 </div>
