@@ -13,6 +13,7 @@ $sql_buscar_usuario = "select * from usuario where email = '$email' and senha = 
 
 $um_usuario = mysqli_query($conexao, $sql_buscar_usuario);
 
+
 if($um_usuario-> num_rows > 0){
     header("location:painel.php");
 }else{
@@ -20,5 +21,3 @@ if($um_usuario-> num_rows > 0){
 }
 
     mysqli_close($conexao);
-
-?>
