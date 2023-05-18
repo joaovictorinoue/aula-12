@@ -9,6 +9,11 @@ include "menu-sistema.php";
             <h1>Lista de Jogos</h1>
         </div>
     </div>
+    <div class="row mb-3">
+        <div class="col">
+            <a href="novo-jogo.php" class="btn btn-success">Novo Jogo</a>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <table border="1" class="table table-dark table-hover">
@@ -33,6 +38,10 @@ include "menu-sistema.php";
                         <td><?php echo $um_jogo["categoria"]; ?> </td>
                         <td>
                             <a class="link-underline link-underline-opacity-0" href="excluir-jogos.php?id=<?php echo $um_jogo["id"]; ?>">❌</a>
+                            
+                            <a class="link-underline link-underline-opacity-0" href="ver-jogo.php?id=<?php echo $um_jogo["id"]; ?>"><img src="img/eye.png" alt="ver"></a>
+
+                            <a class="link-underline link-underline-opacity-0" href="editar-jogos.php?id=<?php echo $um_jogo["id"]; ?>">🖌</a>
                         </td>
                     </tr>
                 <?php

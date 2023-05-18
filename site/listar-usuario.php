@@ -9,6 +9,11 @@ include "menu-sistema.php";
             <h1>Lista de Usuários</h1>
         </div>
     </div>
+    <div class="row mb-3">
+        <div class="col">
+            <a href="novo-usuario.php" class="btn btn-success">Cadastrar Novo Usuário</a>
+        </div>
+    </div>
     <div class="row">
         <div class="col">
             <table border="1" class="table table-dark table-hover">
@@ -31,7 +36,14 @@ include "menu-sistema.php";
                         <td><?php echo $um_usuario["id"]; ?> </td>
                         <td><?php echo $um_usuario["nome"]; ?> </td>
                         <td><?php echo $um_usuario["email"]; ?> </td>
-                        <td><a class="link-underline link-underline-opacity-0" href="excluir-usuarios.php" >❌</a></td>
+                        <td>
+                            <a class="link-underline link-underline-opacity-0" href="excluir-usuario.php?id=<?php echo $um_usuario["id"]; ?>">❌</a>
+
+                            <a class="link-underline link-underline-opacity-0" href="ver-usuario.php?id=<?php echo $um_usuario["id"]; ?>"><img src="img/eye.png" alt="ver"></a>
+
+                            <a class="link-underline link-underline-opacity-0" href="editar-usuario.php?id=<?php echo $um_usuario["id"]; ?>">🖌</a>
+                        </td>
+
                     </tr>
                 <?php
                 endwhile;
