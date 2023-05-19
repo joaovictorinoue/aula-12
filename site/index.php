@@ -63,7 +63,7 @@ include "menu.php";
     while ($um_jogo = mysqli_fetch_array($todos_os_jogos)) :
     ?>
       <div class="col-md-3 text-center mt-4">
-        <img src="<?php echo $um_jogo["foto"]; ?>" alt="Skyrim" class="img-fluid mb-3 style=" object-fit: cover; height=150px; width=100%; object-position: top center;">
+        <img src="<?php echo $um_jogo["foto"]; ?>" alt="Skyrim" class="img-fluid mb-3 style=" object-fit: cover; height=150px; width=100%; object-position: top center;>
         <h3><?php echo $um_jogo["titulo"]; ?></h3>
         <!-- <?php 
         $cor = "";
