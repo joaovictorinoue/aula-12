@@ -65,14 +65,6 @@ include "menu-sistema.php";
       <div class="col-md-3 text-center mt-4">
         <img src="<?php echo $um_jogo["foto"]; ?>" alt="Skyrim" class="img-fluid mb-3 style=" object-fit: cover; height=150px; width=100%; object-position: top center;">
         <h3><?php echo $um_jogo["titulo"]; ?></h3>
-        <!-- <?php 
-        $cor = "";
-        if( strtoupper($um_jogo["categoria"]) == "Aventura"){
-          $cor = "red";
-        }else if( strtoupper($um_jogo["categoria"]) == "Ação");{
-          $cor = "green";
-        }
-        ?> -->
         <h6 class="mt-3 mb-3 <?php echo $um_jogo["categoria"];?>"><?php echo $um_jogo["categoria"]; ?></h6>
         <a href="<?php echo $um_jogo["video"]; ?>" class="btn btn-outline-primary mt-3">Ver Mais</a>
       </div>
